@@ -2,11 +2,20 @@
 
 ## Setup
 
-Download/clone this repo and run `npm install` in both the backend and frontend folders
+Download/clone this repo and run `pnpm install` from the root of the `spectrum` folder to install the dependencies.
 
-## Run servers
+## Running the app
 
-Setup Node environment with this command to set your environment to node 18
+First create a `.env` file and put it inside of the `backend` folder with these key variables:
+
+```shell
+DATABASE_URL="file:./dev.db"
+PORT=4000
+```
+
+This is the url for our SQLite database and also the main port number for our backend Nest.js server.
+
+Now run this command to setup your Node environment to node 18
 
 ```shell
 nvm use
@@ -14,13 +23,13 @@ nvm use
 
 ### Run Backend
 
-First create a SQLite database in `prisma/dev.db` to store the user data
+First create an SQLite database in `prisma/dev.db` to store the user data with this command:
 
 ```shell
 pnpm --filter backend db:push
 ```
 
-Use this command to start the backend server
+Now use this command to start the backend server:
 
 ```shell
 pnpm --filter backend dev
@@ -28,11 +37,13 @@ pnpm --filter backend dev
 
 ### Run Frontend
 
-Use this command to start the frontend server
+Lastly use this command to start the frontend server:
 
 ```shell
 pnpm --filter frontend dev
 ```
+
+You can see what the app looks like in these screenshots:
 
 ## Booking Page
 
