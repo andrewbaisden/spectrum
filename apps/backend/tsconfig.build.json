@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "paths": {
+      "@tech-test/contracts": ["../../packages/contracts/dist"]
+    }
+  },
+  "include": ["src/**/*", "../../packages/contracts/dist/**/*"],
+  "exclude": ["node_modules", "dist", "tests/**/*.spec.ts", "tests/**/*.e2e-spec.ts"]
+}

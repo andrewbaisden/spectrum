@@ -1,0 +1,12 @@
+node_modules
+.turbo
+.next
+.pnpm-debug.log*
+pnpm-lock.yaml
+dist
+.env
+.env.local
+coverage
+.DS_Store
+apps/backend/prisma/dev.db
+apps/backend/prisma/dev.db-journal
