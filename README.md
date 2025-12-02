@@ -33,3 +33,11 @@ Use this command to start the frontend server
 ```shell
 pnpm --filter frontend dev
 ```
+
+## Booking Page
+
+![Booking Page](img/image01.png 'Booking Page')
+
+## Booking Confirmation Page
+
+![Booking Confirmation Page](img/image02.png 'Booking Confirmation Page')
